@@ -1,16 +1,13 @@
-## Hi there 👋
+## Hi, I'm Jenna ✨
+Research Scientist in Systems Biology and Bioinformatics at San Diego State University
 
-<!--
-**jennarhae16/jennarhae16** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+### Academic Work
+- **[Development of systems biology approaches for the reconstruction and validation of the genome-scale metabolic model of the halophilic microalgae Dunaliella salina](link)** — Brief one-line description of what it does/proves
+- **[Coursework Repo](https://github.com/jennarhae16/SDSU/blob/main/README.md)** — Topics covered: ML, distributed systems, etc.
 
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+### Featured Projects
+| Project | Description | Tools & Data |
+|---|---|---|
+| [Project A](link) | What it does in one line | Python, PyTorch |
+| [Project B](link) | What it does in one line | Go, PostgreSQL |
 -->
