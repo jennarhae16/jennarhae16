@@ -1,0 +1,14 @@
+Plate,Metabolite,Experimental,FBA Prediction,Outcome,FBA Growth,In Model,Nitrogen Test
+PM1,ac,+,+,TP,0.065351,True,False
+PM1,acald,-,+,FP,0.122521,True,False
+PM1,akg,-,+,FP,0.243334,True,False
+PM1,etoh,+,+,TP,0.145854,True,False
+PM1,for,+,-,FN,0.0,True,False
+PM1,fru,+,+,TP,0.415598,True,False
+PM3,fum,+,-,FN,0.0,True,True
+PM3,gln__L,-,+,FP,0.730088,True,True
+PM3,glu__L,-,+,FP,0.748435,True,True
+PM3,lac__D,-,-,TN,0.0,True,True
+PM3,mal__L,+,-,FN,0.0,True,True
+PM3,pyr,-,-,TN,0.0,True,True
+PM3,succ,-,-,TN,0.0,True,True
