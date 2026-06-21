@@ -18,6 +18,6 @@ ___
 | [Numerical Calculus 1D](https://github.com/jennarhae16/jennarhae16/blob/main/numerical_calculus_1d.ipynb) | Translated from C — adaptive finite difference derivatives and trapezoidal integration across 5 functions with convergence analysis | NumPy, matplotlib, pandas |
 | [Flux Condition Analysis](https://github.com/jennarhae16/jennarhae16/blob/main/metabolic_modeling/notebooks/flux_condition_analysis.ipynb) | Translated from MATLAB — multi-condition FBA heatmap, clustergram of highly regulated reactions, gene-reaction mapping | COBRApy, seaborn, plotly |
 | [FBA Model Validation](https://github.com/jennarhae16/jennarhae16/blob/main/metabolic_modeling/notebooks/fba_model_validation.ipynb) | Translated from MATLAB — Biolog phenotype microarray validation of metabolic model predictions using MCC scoring | COBRApy, seaborn, plotly |
-
+| [Rection Essentiality Prediction](https://github.com/jennarhae16/jennarhae16/tree/main/drosophila-metabolic-ml) | Translated from MATLAB — Drosophila GEM imported from xlsx to SQL used to train reaction essentiality ML model| sqlite3, scipy, COBRApy, sklearn|
 
 *This repository contains Python translations of work originally completed in C and MATLAB. Translations were made to improve accessibility and reproducibility.*
