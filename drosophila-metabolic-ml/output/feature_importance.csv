@@ -1,0 +1,30 @@
+feature,importance
+subsystem_Glycerolipid metabolism,0.14763594248135997
+n_genes,0.1285060187124944
+n_metabolites,0.11111664628954314
+bound_range,0.08259508963033883
+n_reactants,0.0784472055799601
+subsystem_Transport reactions,0.06259551296064686
+n_products,0.057551753642483654
+subsystem_Other,0.05671775113691811
+is_transport,0.055385815592916166
+subsystem_Retinol metabolism,0.050338637777479156
+subsystem_KM pathways,0.046451409780800285
+is_reversible,0.02753475729088091
+subsystem_Glycerophospholipid metabolism,0.014632880269477427
+"subsystem_Phenylalanine, tyrosine and tryptophan biosynthesis",0.012317568048538388
+subsystem_Exchange reactions,0.010385812682899455
+subsystem_Formation and hydrolysis of cholesterol esters,0.009566253081116725
+subsystem_Leukotriene metabolism,0.007227991312919382
+is_exchange,0.006513715895395611
+subsystem_Metabolism of xenobiotics by cytochrome P450,0.006060548948475234
+subsystem_Arachidonic acid metabolism,0.004047556601148037
+subsystem_Bile acid biosynthesis,0.0038509714089370512
+subsystem_Nucleotide metabolism,0.003431019619074633
+subsystem_Isolated,0.0031811621684715826
+subsystem_Carnitine shuttle (endoplasmic reticular),0.0030678968394906862
+subsystem_Purine metabolism,0.0029644652782178553
+subsystem_Carnitine shuttle (mitochondrial),0.002630552962694836
+subsystem_Inositol phosphate metabolism,0.0025230607164258736
+subsystem_Arginine and proline metabolism,0.0014119189022576443
+subsystem_Prostaglandin biosynthesis,0.001310084388638122
