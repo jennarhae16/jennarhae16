@@ -60,21 +60,17 @@ code/export_cobra_json.py             -> COBRA model JSON (for building a custom
 ## Database schema
 
 ```
-metabolites          (abbreviation PK, description, formula, compartment)
-reactions            (abbreviation PK, description, equation, lower_bound,
-                       upper_bound, is_objective, subsystem, is_reversible,
-                       is_exchange, is_transport)
-genes                (fly_base_id PK)
-reaction_genes       (reaction_abbr FK, gene_id FK)            -- exploded GPR rule
-reaction_metabolites (reaction_abbr FK, metabolite_abbr FK,
-                       stoichiometry, role)                     -- one row per term
+metabolites          (abbreviation, description, formula, compartment)
+reactions            (abbreviation, description, equation, lower_bound,
+                       upper_bound, is_objective, subsystem)
+genes                (fly_base_id)
+reaction_genes       (reaction_abbr, gene_id)            -- GPR rule
+reaction_metabolites (reaction_abbr, metabolite_abbr,
+                       stoichiometry, role)              -- one row per term
 ```
 
-See `sql/feature_engineering.sql` for the standalone queries (joins,
-aggregations, and a window-function example ranking reactions by gene
-count within each subsystem).
 
-## Ground truth: the knockout screen
+## Essentially Discovery by Knockout
 
 For each reaction, its flux is forced to zero and FBA is re-solved.
 A reaction is labeled **essential** if optimal growth drops by more
@@ -135,35 +131,12 @@ data files (the simple `{reaction_id: value}` JSON format Escher's
 
 **This model has no pre-built Escher map** (unlike *E. coli* core
 metabolism or Human-GEM, which ship official ones), so to visualize
-these values you'll need a map first:
-
-1. Load `output/drosophila_cobra_model.json` into the
-   [Escher Builder](https://escher.github.io/) via
-   **Model &rarr; Load COBRA model JSON**.
-2. Given the network has 8,000+ reactions, build a map for one
-   subsystem at a time rather than the whole network — e.g. start
-   with `Glycolysis / Gluconeogenesis` for a manageable, readable
-   layout.
-3. Once you have a map, **Data &rarr; Load reaction data** &rarr; pick
-   one of the three JSON files above to color/size reactions by
-   essentiality.
+these values a map needed to be built.
+![Glycolysis Pathway](https://github.com/jennarhae16/jennarhae16/blob/main/drosophila-metabolic-ml/output/Glycolysis_Dros.png)
 
 Note: metabolite IDs in `drosophila_cobra_model.json` use underscores
 instead of brackets (`m02552_c` instead of `m02552[c]`) to match
 standard COBRA/Escher ID conventions; reaction IDs are unchanged.
-
-## Running it yourself
-
-```bash
-pip install pandas numpy scipy scikit-learn openpyxl
-
-python src/build_database.py        # ~5s
-python src/fba.py                   # sanity check, ~1s
-python src/run_knockout_screen.py   # ~10 min (1,766 LP solves)
-python src/train_model.py           # ~10s
-python src/export_escher_data.py
-python src/export_cobra_json.py
-```
 
 ## Limitations / honest caveats
 
